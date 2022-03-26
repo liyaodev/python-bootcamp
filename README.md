@@ -1,11 +1,8 @@
 
 ## 多语言编程实践
-* Python
+### Python 系列
 
-## 目录
-### Python
+* [插件化系统开发](./python/plugin_system/README.md)
+### Golang 系列
 
-[系统插件化技术](./python/plugin_system/README.md)
-### Go
-
-### Java
+### Java 系列
