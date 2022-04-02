@@ -10,8 +10,8 @@ from common.logger import LOG
 
 class Demo(object):
     
-    def __init__(self) -> None:
-        pass
+    # def __init__(self) -> None:
+    #     pass
     
     def predict(self, req_dict={}):
         LOG.info("this is demo infer, req_dict=%s" % json.dumps(req_dict))
