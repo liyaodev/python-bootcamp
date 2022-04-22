@@ -1,0 +1,13 @@
+{
+    "name": "Python Bootcamp Dev Container Definition",
+    "dockerComposeFile": ["./docker-compose-devcontainer.yml"],
+    "service": "python-bootcamp",
+    "initializeCommand": "scripts/devcontainer.sh up",
+    "workspaceFolder": "/www/server",
+    "remoteEnv": { },
+    "extensions": [
+      "ms-vscode.cpptools",
+      "ms-python.python",
+	    "ms-python.vscode-pylance"
+    ]
+}

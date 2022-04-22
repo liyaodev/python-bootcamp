@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  python-bootcamp:
+    container_name: python-bootcamp
+    image: liyaodev/python-bootcamp-env:v1.0.0
+    # # 本地构建
+    # build:
+    #   context: .
+    #   dockerfile: build/docker/build_env/Dockerfile
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/www/server
+      - ${PYTHON_BOOTCAMP_ROOT_DIR:-.}/volumes/vscode-extensions:/www/.vscode-server
+
+networks:
+  default:
+    name: python_bootcamp_dev
