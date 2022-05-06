@@ -11,8 +11,8 @@ services:
     ports:
       - 8888:8888
     volumes:
-      - .:/www/server
-      - ${PYTHON_BOOTCAMP_ROOT_DIR:-.}/volumes/vscode-extensions:/www/.vscode-server
+      - .:/www/server:delegated
+      - ${PYTHON_BOOTCAMP_ROOT_DIR:-.}/volumes/vscode-extensions:/www/.vscode-server:delegated
 
 networks:
   default:
