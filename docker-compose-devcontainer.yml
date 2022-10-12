@@ -4,10 +4,10 @@ services:
   python-bootcamp:
     container_name: python-bootcamp
     image: liyaodev/python-bootcamp-env:v1.0.0
-    # # 本地构建
-    # build:
-    #   context: .
-    #   dockerfile: build/docker/build_env/Dockerfile
+    # 本地构建
+    build:
+      context: .
+      dockerfile: build/docker/build_env/Dockerfile
     ports:
       - 8888:8888
     volumes:
