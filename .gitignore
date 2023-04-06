@@ -124,3 +124,4 @@ dmypy.json
 # Env
 volumes
 .vscode
+setup_env.sh
